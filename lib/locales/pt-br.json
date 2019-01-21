@@ -1,0 +1,7 @@
+{
+    "auth": {
+        "invalidCredentials": "Credências inválidas",
+        "notAuthorized": "Não autorizado",
+        "tokenExpired": "Token expirado"
+    }
+}

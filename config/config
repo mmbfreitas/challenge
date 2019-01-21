@@ -1,0 +1,16 @@
+'use strict';
+
+const config = {
+    "db": {
+        "user": process.env.API_DB_USER,
+        "password": process.env.API_DB_PASS,
+        "name": process.env.API_DB_NAME,
+        "host": process.env.API_DB_HOST,
+        "port": process.env.API_DB_PORT,
+        "options": process.env.API_DB_OPTIONS,
+        "listPageSize": process.env.API_PAGE_SIZE
+    },
+    "jwtSecret": process.env.API_SCRET
+};
+
+module.exports = config;

@@ -1,0 +1,19 @@
+version: "2.1"
+
+services:
+  api:
+    build: .
+    command: /api/node_modules/.bin/nodemon index.js
+    ports:
+      - 4000:4000
+    env_file:
+      - ./env/api.env
+    volumes:
+      - .:/api
+      - /api/node_modules
+
+  mongodb:
+    image: aashreys/mongo-auth:latest
+    ports:
+      - 27019:27017
+    env_file: ./env/mongodb.env

@@ -1,0 +1,11 @@
+{
+	"auth": {
+		"invalidCredentials": "Credências inválidas",
+		"notAuthorized": "Não autorizado",
+		"tokenExpired": "Token expirado"
+	},
+	"global": {
+		"notFound": "global.notFound",
+		"general": "global.general"
+	}
+}
