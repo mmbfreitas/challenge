@@ -22,6 +22,21 @@
 
 - Run docker-compose run --rm api npm t - To run unit and functional tests
 
+####HTML code
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <mate charest="utf-8" />
+        <title>Hello world!</title>
+    </head>
+    <body>
+        <h1>Hello world!</h1>
+    </body>
+</html>
+```
+
 <div class="postman-run-button"
 data-postman-action="collection/import"
 data-postman-var-1="c71aa95af397668d5454"></div>
