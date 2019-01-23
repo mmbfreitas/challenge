@@ -36,4 +36,6 @@ Run 'docker-compose down' if you have executed docker-compose up before
 Run 'docker-compose -f docker-compose.test.yml up'
 
 Run 'docker-compose -f docker-compose.test.yml run --rm api npm t'  to run unit and functional tests
+
+if you want test in postman you could import the file Ambev-challenge.postman_collection. In this file there is a example of each call 
 ```
