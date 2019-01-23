@@ -1,0 +1,27 @@
+version: "2.1"
+
+services:
+  api:
+    build: .
+    command: bash -c "./scripts/migrate up && npm run apidoc && /api/node_modules/.bin/nodemon index.js"
+    ports:
+      - 4000:4000
+    env_file:
+      - ./env/api.test.env
+    volumes:
+      - .:/api
+      - /api/node_modules
+    depends_on:
+      mongodb:
+        condition: service_healthy
+
+  mongodb:
+    image: aashreys/mongo-auth:latest
+    ports:
+      - 27019:27017
+    env_file: ./env/mongodb.test.env
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongo localhost:27017/ambev_test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 6

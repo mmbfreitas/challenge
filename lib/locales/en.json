@@ -10,6 +10,8 @@
 	},
 	"pdv": {
 		"noId": "pdv.noId",
-		"noPdvAvailable": "pdv.noPdvAvailable"
+		"noPdvAvailable": "pdv.noPdvAvailable",
+		"errDocument": "pdv.errDocument",
+		"errCoveragePoints": "pdv.errCoveragePoints"
 	}
 }

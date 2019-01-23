@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "Running --> Migrations"
+node node_modules/mongodb-migrate/bin/mongo-migrate -runmm -cfg ./scripts/migration_config.js ${@}

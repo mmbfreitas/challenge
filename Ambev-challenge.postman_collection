@@ -1,0 +1,97 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Ambev-challenge",
+		"_postman_id": "df048dd5-6bf3-4afd-f85c-d81c4bc62cc5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4000/v1/pdv?lng=-38.542136&lat=-3.797545",
+			"request": {
+				"url": {
+					"raw": "http://localhost:4000/v1/pdv?lng=-38.542136&lat=-3.797545",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"pdv"
+					],
+					"query": [
+						{
+							"key": "lng",
+							"value": "-38.542136",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "lat",
+							"value": "-3.797545",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"001\",\n    \"client_id\":\"001\",\n    \"webhook\":\"\",\n    \"company\":{\n        \"id\":\"001\",\n        \"cnpj\":\"23115906000157\",\n        \"fields\":{\n            \"indicator\":{\n                \"gross_revenue\":1000000.00,\n                \"net_income\":1000000\n            }\n        }\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/v1/pdv/2",
+			"request": {
+				"url": "http://localhost:4000/v1/pdv/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"001\",\n    \"client_id\":\"001\",\n    \"webhook\":\"\",\n    \"company\":{\n        \"id\":\"001\",\n        \"cnpj\":\"23115906000157\",\n        \"fields\":{\n            \"indicator\":{\n                \"gross_revenue\":1000000.00,\n                \"net_income\":1000000\n            }\n        }\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/v1/pdv/",
+			"request": {
+				"url": "http://localhost:4000/v1/pdv/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"tradingName\": \"PDV Teste\",\n    \"ownerName\": \"Prorietario teste\",\n    \"document\": \"54.845.458/0001-70\",\n    \"coveragePoints\": [\n        [\n            -47.800174,\n            -21.194029\n        ],\n        [\n            -47.816825,\n            -21.198510\n        ],\n        [\n            -47.814078,\n            -21.211073\n        ],\n        [\n            -47.808070,\n            -21.214434\n        ],\n        [\n            -47.796826,\n            -21.213073\n        ],\n        [\n            -47.794509,\n            -21.202511\n        ],\n        [\n            -47.800174,\n            -21.194029\n        ]\n    ],\n    \"address\": [\n        -47.807813,\n        -21.198510\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
