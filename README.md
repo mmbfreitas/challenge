@@ -18,6 +18,8 @@ Go to the root path of project cd ambev-challenge
 ```
 Run 'npm install'
 ```
+
+### Production
 ```
 Run 'docker-compose up' - wait until show in log that server is up
 ```
@@ -25,6 +27,13 @@ Run 'docker-compose up' - wait until show in log that server is up
 ``` 
 Access http://localhost:4000 (http://localhost:4000/doc to see documentation)
 ```
+
+### tests
+
 ```
-Run 'docker-compose run --rm api npm t'  to run unit and functional tests
+Run 'docker-compose down' if you have executed docker-compose up before
+
+Run 'docker-compose -f docker-compose.test.yml up'
+
+Run 'docker-compose -f docker-compose.test.yml run --rm api npm t'  to run unit and functional tests
 ```
