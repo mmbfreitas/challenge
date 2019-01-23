@@ -6,11 +6,12 @@
     "main": "index.js",
     "author": "Murillo Freitas",
     "scripts": {
-        "test": "",
-        "test:unit": "",
-        "test:func": "",
+        "test": "npm run test:unit -- --exit && npm run test:func -- --exit",
+        "test:unit": "NODE_ENV=test & mocha --require test/boot --opts test/mocha.opts test/unit/*",
+        "test:func": "NODE_ENV=test & mocha --require test/boot --opts test/mocha.opts test/functional/**/*.js",
         "pm2": "pm2 delete ecosystem.json && pm2 startOrReload ecosystem.json",
-        "start": "npm run pm2"
+        "start": "npm run pm2",
+        "apidoc": "apidoc -i routers/"
     },
     "dependencies": {
         "apidoc": "^0.17.7",
@@ -20,6 +21,7 @@
         "express-jwt": "^5.0.0",
         "i18n": "^0.8.3",
         "jsonwebtoken": "^8.4.0",
+        "moment": "^2.24.0",
         "mongodb": "^3.1.12",
         "mongodb-migrate": "^2.0.2",
         "nock": "^9.0.13",

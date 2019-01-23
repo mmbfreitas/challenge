@@ -7,5 +7,9 @@
 	"global": {
 		"notFound": "global.notFound",
 		"general": "global.general"
+	},
+	"pdv": {
+		"noId": "pdv.noId",
+		"noPdvAvailable": "pdv.noPdvAvailable"
 	}
 }

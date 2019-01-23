@@ -22,6 +22,7 @@ _i18n.configure({
 
 _moment.locale('pt-BR');
 
+global.moment = _moment;
 global.i18n = _i18n;
 global.helper = require('./lib/helper');
 global.error = require('./lib/customError');

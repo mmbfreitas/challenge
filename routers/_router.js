@@ -2,7 +2,7 @@
 
 const express = require('express');
 const requireDir = require('require-dir');
-const version = __filename.split('/')[2];
+const version = 'v1';
 
 function registerRoutesFromRequireDir(app, routePath, obj) {
     if (typeof routePath !== 'string') return;
