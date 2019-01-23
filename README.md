@@ -9,15 +9,22 @@
 
 ## Instructions
 
+```
+Clone from github - git clone https://github.com/mmbfreitas/challenge.git
+```
+```
+Go to the root path of project cd ambev-challenge
+```
+```
+Run 'npm install'
+```
+```
+Run 'docker-compose up' - wait until show in log that server is up
+```
 
-- Clone from github
-
-- Go to the root path of project
-
-- Run npm install in root folder of project
-
-- Run docker-compose up
-
-- Access localhost:4000 (localhost:4000/doc to see documentation)
-
-- Run docker-compose run --rm api npm t - To run unit and functional tests
+``` 
+Access http://localhost:4000 (http://localhost:4000/doc to see documentation)
+```
+```
+Run 'docker-compose run --rm api npm t'  to run unit and functional tests
+```
