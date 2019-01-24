@@ -1,11 +1,14 @@
-# challenge
+# Challenge
 
 
-## precondition
-* Docker - Engine: 18.06.0-ce
+## Precondition
+* Docker - Engine: 18.06.0-ce or higher
+* Docker Compose - 1.22.0
 * Node - version 8.11.4
 * Npm -version v6.6.0
 * Available ports: 4000 | 27019
+
+** maybe you should use sudo for some commands if you are using ubuntu
 
 ## Instructions
 
@@ -13,7 +16,7 @@
 Clone from github - git clone https://github.com/mmbfreitas/challenge.git
 ```
 ```
-Go to the root path of project cd ambev-challenge
+Go to the root path of project -> 'cd challenge'
 ```
 ```
 Run 'npm install'
