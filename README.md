@@ -31,7 +31,7 @@ Run 'docker-compose up' - wait until show in log that server is up
 Access http://localhost:4000 (http://localhost:4000/doc to see documentation)
 ```
 
-### tests
+### Tests
 
 ```
 Run 'docker-compose down' if you have executed docker-compose up before
